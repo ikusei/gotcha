@@ -9,7 +9,7 @@ class BackwardGotcha < Gotcha::Base
     string_length = rand(MAX_STRING_LENGTH - MIN_STRING_LENGTH) + MIN_STRING_LENGTH
     string = (0...string_length).collect { CHARS[Kernel.rand(CHARS.length)] }.join
 
-    @question = "What is '#{string}' backwards?"
+    @question = "Was ist '#{string}' rückwärts?"
     @answer = string.reverse
   end
 
